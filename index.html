@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Kalkulator</title>
+    <!-- Local CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
+
+    <!-- bootstrap CDN Stylesheet
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     Bootstrap Javascript
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+</head>
+  <body>
+
+  <div class="calculator">
+    <div class="calculator-header">
+      <p>Kalkulator</p>
+    </div>
+    <div class="calculator-screen">
+      <input type="text" id="result"/>
+    </div>
+    <div class="column-rows">
+      <div class="column fixed">
+          <input type="button" class="k-light k-item c-clear" value="c" onClick="clr()"/>
+          <input type="button" class="k-item one" value="1" onClick="dis('1')"/>
+          <input type="button" class="k-item four" value="4" onClick="dis('4')"/>
+          <input type="button" class="k-item seven" value="7" onClick="dis('7')"/>
+          <input type="button" class="k-item plain" value=" " onClick="dis('')"/>
+        </div>
+
+      <div class="column">
+        <input type="button" class="k-light k-item plus" value="+" onClick="dis('+')"/>
+        <input type="button" class="k-item two" value="2" onClick="dis('2')"/>
+        <input type="button" class="k-item five" value="5" onClick="dis('5')"/>
+        <input type="button" class="k-item eight" value="8" onClick="dis('8')"/>
+        <input type="button" class="k-item zero" value="0" onClick="dis('0')"/>
+      </div>
+
+
+      <div class="column fixed">
+        <input type="button" class="k-light k-item minus" value="-" onClick="dis('-')"/>
+        <input type="button" class="k-item three" value="3" onClick="dis('3')"/>
+        <input type="button" class="k-item six" value="6" onClick="dis('6')"/>
+        <input type="button" class="k-item nine" value="9" onClick="dis('9')"/>
+        <input type="button" class="k-item plain" value=" " onClick="dis('')"/>
+      </div>
+
+      <div class="column fixed">
+        <input type="button" class="k-light k-item times" value="*" onClick="dis('*')"/>
+        <input type="button" class="k-light k-item division" value="/" onClick="dis('/')"/>
+        <input type="button" class="k-light k-item dot" value="." onClick="dis('.')"/>
+        <input type="button" class="k-light k-item equals" value="=" onClick="solve()"/>
+        <input type="button" class="k-light k-item logo" value="K" onClick="dis('')"/>
+      </div>
+
+    </div>
+  </div>
+
+  </body>
+  <script src="index.js" charset="utf-8"></script>
+</html>

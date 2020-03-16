@@ -1,0 +1,55 @@
+body{
+  background-color: #376979;
+  font-family: 'Ubuntu';
+  margin: 0;
+  padding: 0;
+}
+
+.column{
+  display: inline-block;
+}
+
+.calculator{
+  width: 39%;
+  margin: 0 auto;
+}
+
+.calculator-header{
+  background-color: #142932;
+  color: #76B0C9;
+  font-size: 2rem;
+  width: 500px;
+  text-align: center;
+  padding: 1%;
+  margin-bottom: 3px;
+}
+
+.calculator-screen input{
+  width: 500px;
+  padding: 20% 1% 2% 1%;
+  background-color: #0A1316;
+  color: #76B0C9;
+  border: none;
+  font-size: 2rem;
+  margin-bottom: 1px;
+}
+
+.k-item{
+  background-color: #0A1316;
+  padding: 50px;
+  border: none;
+  color: #142932;
+  font-size: 3rem;
+  margin: 2% 0;
+  display: block;
+  margin-right: 0;
+  width: 125px;
+}
+
+.k-light{
+  background-color: #142932;
+  color: #0A1316;
+}
+
+.logo{
+}
